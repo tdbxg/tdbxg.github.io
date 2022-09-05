@@ -6,13 +6,52 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Title：输入输出流C++的输入输出流C++的输入输出流包括以下3方面的内容(1)对系统指定的标准设备的输入和输出。即从键盘输入数据，输出到显示器屏幕，简称标准I&#x2F;O (2) 意外存磁盘文件为对像进行输入输出。即从磁盘文件输入数据，数据输出到磁盘文件，简称文件I&#x2F;O。 (3)对内存中指定的空间进行输入输出。通常指定一个字符串数组作为存储空间（实际上可以利用该空间存储任何信息）">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2022/05/23/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%B5%81/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Title：输入输出流C++的输入输出流C++的输入输出流包括以下3方面的内容(1)对系统指定的标准设备的输入和输出。即从键盘输入数据，输出到显示器屏幕，简称标准I&#x2F;O (2) 意外存磁盘文件为对像进行输入输出。即从磁盘文件输入数据，数据输出到磁盘文件，简称文件I&#x2F;O。 (3)对内存中指定的空间进行输入输出。通常指定一个字符串数组作为存储空间（实际上可以利用该空间存储任何信息）">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523111024555.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523113241116.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523132858793.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523133221159.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523133231437.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523133753125.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523143112852.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523150125021.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523175914519.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523183409971.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523184945349.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523190208604.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523190356218.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523191346584.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523191354121.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523192800898.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523195907129.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523195932234.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523195943663.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523200040571.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523210514058.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523211034679.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523211455829.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523212036680.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523212048400.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523212954731.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523230207157.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523230738402.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220524000839802.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220524000929085.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220524001120992.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220524001200778.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220524001231361.png">
+<meta property="og:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220524001323795.png">
+<meta property="article:published_time" content="2022-05-23T02:48:46.159Z">
+<meta property="article:modified_time" content="2022-09-05T11:53:38.146Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/缪承杭/AppData/Roaming/Typora/typora-user-images/image-20220523111024555.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -69,60 +108,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/08/07/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-08-07T14:53:21.390Z" itemprop="datePublished">2022-08-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/08/07/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/08/07/hello-world/" data-id="cl6jghobv0000rcu60imfejmt" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-输入输出流" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-输入输出流" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/05/23/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%B5%81/" class="article-date">
   <time class="dt-published" datetime="2022-05-23T02:48:46.159Z" itemprop="datePublished">2022-05-23</time>
@@ -280,137 +266,28 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-多态与继承" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/04/29/%E5%A4%9A%E6%80%81%E4%B8%8E%E7%BB%A7%E6%89%BF/" class="article-date">
-  <time class="dt-published" datetime="2022-04-29T01:34:20.725Z" itemprop="datePublished">2022-04-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="Title：继承与派生"><a href="#Title：继承与派生" class="headerlink" title="Title：继承与派生"></a>Title：继承与派生</h1><h2 id="派生列对象的存储组织"><a href="#派生列对象的存储组织" class="headerlink" title="派生列对象的存储组织"></a>派生列对象的存储组织</h2><p>  1.每个对象实例都站一块存储空间，其中仅存放对象实例的非静态数据成员，静态数据成员和成员函数一个类就只存放一份.</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430094909951.png" alt="image-20220430094909951"></p>
-<h3 id="派生类的对象中存放以下内容："><a href="#派生类的对象中存放以下内容：" class="headerlink" title="派生类的对象中存放以下内容："></a>派生类的对象中存放以下内容：</h3><p> （1）自身定义的非静态数据成员；</p>
-<p> （2）从基类中继承的非静态数据成员；</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430095105852.png" alt="image-20220430095105852"></p>
-<p>注：在派生类对象中，包含着基类对象，并且基类对象的存储位置位于派生类对象新增的成员变量之前。</p>
-<h2 id="继承与构造、析构"><a href="#继承与构造、析构" class="headerlink" title="继承与构造、析构"></a>继承与构造、析构</h2><p>1.构造函数可缺省：用户在类中可以不定义构造函数，系统回自动设置一个default构造函数，但是default的构造函数是一个空函数，不进行任何操作（如果需要对类中的数据成员进行初始化，应自己定义构造函数。</p>
-<p>2.构造函数的作用：对数据成员进行初始化。但是派生类的构造函数需要考虑对派生类增加的数据成员和继承基类的数据成员初始化。</p>
-<p>3.c++的解决思路：在执行派生类的构造函数时，调用基类的构造函数。（因为基类的数据可能大多数都是私有的在派生类中无法进行访问）</p>
-<h3 id="派生类中构造函数和析构函数的调用顺序"><a href="#派生类中构造函数和析构函数的调用顺序" class="headerlink" title="派生类中构造函数和析构函数的调用顺序"></a>派生类中构造函数和析构函数的调用顺序</h3><p>规则：</p>
-<p>   1.创建一个派生类对象时：</p>
-<p>​       先调用基类的构造函数</p>
-<p>​       在调用派生类的构造函数</p>
-<p>​    2.撤销一个派生类对象时</p>
-<p>​       先调用派生类的析构函数</p>
-<p>​       在调用基类的析构函数</p>
-<h3 id="不同复杂程度的派生类的构造函数"><a href="#不同复杂程度的派生类的构造函数" class="headerlink" title="不同复杂程度的派生类的构造函数"></a>不同复杂程度的派生类的构造函数</h3><p>1.简单派生类的构造函数（只有一个基类，且只有一级派生（只有直接派生类，没有间接欸派生类），在派生类的数据成员中不含其他类的对象（子对象）。任何派生类都包含基类的成员。</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430100453352.png" alt="image-20220430100453352"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430100528948.png" alt="image-20220430100528948"></p>
-<p>重要：在创建派生类对象时，需要调用基类的构造函数：初始化派生类对象中从基类继承的成员。在执行一个派生类的构造函数之前，总是先执行基类的构造函数。</p>
-<h3 id="调用基类构造函数的两种方式"><a href="#调用基类构造函数的两种方式" class="headerlink" title="调用基类构造函数的两种方式"></a>调用基类构造函数的两种方式</h3><p>1.显示调用:在派生类的构造函数中，为基类的构造函数提供参数。</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430100952034.png" alt="image-20220430100952034"></p>
-<p>即：在创建一个派生类对象时，就是调用基类的构造函数去初始化。</p>
-<p>2.隐式调用：在派生类的构造函数中，省略基类的构造函数。（需要基类中有默认的default构造函数或无参构造函数或带默认值的构造函数）</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430101400549.png" alt="image-20220430101400549"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430101414686.png" alt="image-20220430101414686">注：这个3赋值给m，而函数会调用基类的有默认值的构造函数给n赋值；</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430101714903.png" alt="image-20220430101714903"></p>
-<p>注：实参3不能成功赋值给基类成员n，因为隐式调用只能调用default的构造函数、无参构造函数、有默认值的构造含数（就是直接把默认值赋值给数据成员），所以想要完成对n的赋值需要进行显示调用。</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430104955273.png" alt="image-20220430104955273"></p>
-<p>注：同理。</p>
-<h3 id="有子对象的派生类的构造函数"><a href="#有子对象的派生类的构造函数" class="headerlink" title="有子对象的派生类的构造函数"></a>有子对象的派生类的构造函数</h3><p>子对象：一个剋的成员函数是某一个类的对象成员，该对象就成为子对象。子对象实际上就是对象成员。</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430110612210.png" alt="image-20220430110612210"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430110623629.png" alt="image-20220430110623629"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430110633506.png" alt="image-20220430110633506"></p>
-<p>派生类构造函数名（总参数列表）：基类构造函数名（参数列表），子对象名（参数列表）{</p>
-<p>  派生类中新增数据成员初始化语句</p>
-<p>}</p>
-<p>总参数列表中的参数：应当包括基类构造函数和子对象的参数列表参数，基类构造函数和子对象的次序可以任意。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Student1::student1（<span class="type">int</span> n,string name,<span class="type">int</span> n1,string nam1,<span class="type">int</span> a,string ad):<span class="built_in">monitor</span>(n1,nam1),<span class="built_in">Student</span>(n,nam)</span><br></pre></td></tr></table></figure>
+    <a href="/2022/08/07/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/04/29/%E5%A4%9A%E6%80%81%E4%B8%8E%E7%BB%A7%E6%89%BF/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
 
-<h4 id="在创建派生类对象时："><a href="#在创建派生类对象时：" class="headerlink" title="在创建派生类对象时："></a>在创建派生类对象时：</h4><ol>
-<li><p>先执行基类的构造函数，用以初始化派生类对象冲从基类继承的成员</p>
-</li>
-<li><p>在执行成员对像类的构造函数，用以初始化派生类的成员对像</p>
-</li>
-<li><p>最后执生类自己的构造函数</p>
-</li>
-</ol>
-<h4 id="在派生类对象消亡时："><a href="#在派生类对象消亡时：" class="headerlink" title="在派生类对象消亡时："></a>在派生类对象消亡时：</h4><ol>
-<li>先执行派生类自己的析构函数</li>
-<li>在执行各成员对象类的析构函数‘</li>
-<li>最后执行基类的析构函数</li>
-</ol>
-<h3 id="多层派生时的构造函数"><a href="#多层派生时的构造函数" class="headerlink" title="多层派生时的构造函数"></a>多层派生时的构造函数</h3><p>多层派生：一个类不仅可以派生出一个派生类，派生类还可以继续派生，姓成派生的层次结构。</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430111809414.png" alt="image-20220430111809414"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430111819605.png" alt="image-20220430111819605"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430111832276.png" alt="image-20220430111832276"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430111912955.png" alt="	"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430111925059.png" alt="image-20220430111925059"></p>
-<h3 id="多层派生时的构造函数-1"><a href="#多层派生时的构造函数-1" class="headerlink" title="多层派生时的构造函数"></a>多层派生时的构造函数</h3><p>基类的构造函数：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Student</span>(<span class="type">int</span> n,string nam)</span><br></pre></td></tr></table></figure>
-
-<p>一级派生类的构造函数：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Student1（<span class="type">int</span> n,string nam,<span class="type">int</span> a):<span class="built_in">Student</span>(n,man)</span><br></pre></td></tr></table></figure>
-
-<p>二级派生类的构造函数：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Student2（<span class="type">int</span> n,string nam,<span class="type">int</span> a,<span class="type">int</span> s):<span class="built_in">Student1</span>(n,nam,a)</span><br></pre></td></tr></table></figure>
-
-
-
-<p>在创建Student2类对象时，调用Studnet2构造函数；</p>
-<p>在执行Student2构造函数时，先调用Student1构造函数；</p>
-<p>在执行Student1构造函数时，先调用基类Student构造函数。</p>
-<p>初始化的顺序是：</p>
-<ol>
-<li>先初始化基类的数据成员num和name</li>
-<li>在初始化Student的数据成员age</li>
-<li>最后在初始化Student2的数据成员score</li>
-</ol>
-<h2 id="派生类构造函数的特殊形式"><a href="#派生类构造函数的特殊形式" class="headerlink" title="派生类构造函数的特殊形式"></a>派生类构造函数的特殊形式</h2><p>(1) 当不需要对派生类新增成员进行任何初始化操作时，派生类构造函数的函数体可以为空。</p>
-<p>派生类Student1构造函数也可以改写为</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Student</span>(<span class="type">int</span> n,string nam,<span class="type">int</span> n1,string nam1):<span class="built_in">Student</span>(n,nam),<span class="built_in">monitor</span>(n1,nma1)&#123;&#125;</span><br></pre></td></tr></table></figure>
-
-<p>此时，派生类构造函数的作用：只是将参数传递给基类构造函数和子对象，并在执行派生类</p>
-<p>构造函数时调用基类构造函数盒子对象构造函数。</p>
-<p>（2) 基类中没有定义构造函数、或定义了没有参数的构造函数：定义派生类构造函数时，可不写基类构造函数</p>
-<pre><code>     1. 此时，派生类构造函数没有向基类构造函数传递参数得到任务；
-     2. 调用派生类构造函数时，系统会先行调用基类的default构造函数或无参构造函数。
-</code></pre>
-<p>（3）基类和子对象类型中都没有定义带参数的构造函数：如果也不需要对派生类自己的数据成员进行初始化，则可以不必显示的定义派生类的构造函数。</p>
-<ol>
-<li>此时的派生类构造函数既没有向基类构造函数和子对象构造函数传递参数的任务，也没有对派生类自己的数据成员；</li>
-<li>在建立派生类对象时，系统会自动调用系统提供的派生类default构造函数，并且执行派生类缺省构造函数和子对象类型缺省构造函数</li>
-</ol>
-<p>（4）基类或子对象类型中定义了带参数的构造函数：必须显示定义派生类构造函数，并在派生类构造函数中显示给出基类或子对象类型的构造函数及其参数列表。</p>
-<p>（5）基类中既定义午无参的构造函数，又定义了有参的构造函数：定义派生类构造函数时，既可以包含基类构造函数及参数，也可以不包含基类构造函数。</p>
-<p>​    调用派生类构造函数时，根据构造函数的内容决定调用基类的有参构造函数还是无参构造函数，编程可以根据派生类的需要决定采用哪一种方式。</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430145632556.png" alt="image-20220430145632556"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/29/%E5%A4%9A%E6%80%81%E4%B8%8E%E7%BB%A7%E6%89%BF/" data-id="cl7opftue00009ku62indbtie" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
