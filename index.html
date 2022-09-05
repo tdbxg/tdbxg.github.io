@@ -132,9 +132,19 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/05/23/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%B5%81/">输入输出流</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="Title：输入输出流"><a href="#Title：输入输出流" class="headerlink" title="Title：输入输出流"></a>Title：输入输出流</h1><h2 id="C-的输入输出流"><a href="#C-的输入输出流" class="headerlink" title="C++的输入输出流"></a>C++的输入输出流</h2><h3 id="C-的输入输出流包括以下3方面的内容"><a href="#C-的输入输出流包括以下3方面的内容" class="headerlink" title="C++的输入输出流包括以下3方面的内容"></a>C++的输入输出流包括以下3方面的内容</h3><p>(1)对系统指定的标准设备的输入和输出。即从键盘输入数据，输出到显示器屏幕，简称标准I&#x2F;O</p>
+        <h2 id="C-的输入输出流"><a href="#C-的输入输出流" class="headerlink" title="C++的输入输出流"></a>C++的输入输出流</h2><h3 id="C-的输入输出流包括以下3方面的内容"><a href="#C-的输入输出流包括以下3方面的内容" class="headerlink" title="C++的输入输出流包括以下3方面的内容"></a>C++的输入输出流包括以下3方面的内容</h3><p>(1)对系统指定的标准设备的输入和输出。即从键盘输入数据，输出到显示器屏幕，简称标准I&#x2F;O</p>
 <p>(2) 意外存磁盘文件为对像进行输入输出。即从磁盘文件输入数据，数据输出到磁盘文件，简称文件I&#x2F;O。</p>
 <p>(3)对内存中指定的空间进行输入输出。通常指定一个字符串数组作为存储空间（实际上可以利用该空间存储任何信息），简称串I&#x2F;O。</p>
 <p>C++的输入输出流：是指由若干字节组成的字节序列，这些字节中的数据按顺序从一个对象传送到另一个对象。</p>
@@ -145,7 +155,6 @@
 <p><strong>输入输出流被定义为类</strong></p>
 <p>在C++的标准类库中，将用于进行数据输入输出的类统称为”流类”。用流类定义的对象成为流对象。cin是流类istream的对象，cout是流类ostream的对象，不是C++语言中提供的语句。</p>
 <p>所以使用cin&#x2F;cout，要在程序中包含iostream的头文件</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523111024555.png" alt="image-20220523111024555"></p>
 <h2 id="流对象"><a href="#流对象" class="headerlink" title="流对象"></a>流对象</h2><p>1.cin对应与标准输入流，用于从键盘读取数据，也可以被重定向为从文件中读取数据。</p>
 <p>2.cout对应于标准输出流，用于像屏幕输出数据，也可以被重定向为向文件写入数据。</p>
 <p>3.cerr对应于标准错误数据输出流，用于向屏幕输出出错信息，不能被重定向。</p>
@@ -156,7 +165,6 @@
 <p>cout是基础输出，主要用于项目文件的输出；</p>
 <p>cerr用于输出错误信息（比如调试代码信息）</p>
 <p>clog用于输出日志文件</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523113241116.png" alt="image-20220523113241116"></p>
 <p>标准输入流： 从标准设备（键盘）流向程序的数据。</p>
 <p>istream定义了输入流数据：cin</p>
 <p>cin：是istream类的对象，从键盘获取数据，程序通过流提取符“&gt;&gt;”从流中提取数据。</p>
@@ -164,11 +172,6 @@
 <p>（1）”&gt;&gt;”从流中提取数据时，会过滤掉输入流中的不可见字符，如空格、回车、制表符tab等；</p>
 <p>（2）只有在输入完数据，按回车键后，该行数据才被送入输冲区，形成输入流，提取运算符“&gt;&gt;”才能从中提取数据；</p>
 <p>（3）需要注意保证从流中读取数据能正常进行。</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523132858793.png" alt="image-20220523132858793"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523133221159.png" alt="image-20220523133221159"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523133231437.png" alt="image-20220523133231437"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523133753125.png" alt="image-20220523133753125"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523143112852.png" alt="image-20220523143112852"></p>
 <h2 id="ostream-类成员函数cout-put-输出一个字符"><a href="#ostream-类成员函数cout-put-输出一个字符" class="headerlink" title="ostream 类成员函数cout.put()  输出一个字符"></a>ostream 类成员函数cout.put()  输出一个字符</h2><p>​    当我们需要从缓冲区中读取一个字符输出时，我们需要调用put成员函数去实现。</p>
 <p>​    cout.put()专用于向输出流缓冲区中添加单个字符，其语法格式如下：</p>
 <p>​                                     </p>
@@ -200,8 +203,6 @@
 <p>cin.get()函数不会跳过空格、tab、回车等空白字符，所有字符都能被读入。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span><span class="comment">//若没有读到EOF,cin流不会停下，一直等待输入</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"></span>&#123;<span class="type">int</span> c；</span><br><span class="line">cout&lt;&lt;<span class="string">&quot;enter a sentence:&quot;</span>&lt;&lt;endl;</span><br><span class="line"><span class="keyword">while</span>((c=cin.<span class="built_in">get</span>())!=EOF)</span><br><span class="line">    cout.<span class="built_in">put</span>(c);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>样例：</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523150125021.png" alt="image-20220523150125021"></p>
 <h3 id="2-带一个参数的get（）函数：cin-get-ch"><a href="#2-带一个参数的get（）函数：cin-get-ch" class="headerlink" title="(2)带一个参数的get（）函数：cin.get(ch)"></a>(2)带一个参数的get（）函数：cin.get(ch)</h3><p>从输入流读取一个字符，赋给字符变量ch，如果读取成功则返回非0值（通常是1）；若失败（遇文件结束符）则返回0值。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"><span class="type">char</span> c;</span><br><span class="line">cout&lt;&lt;<span class="string">&quot;enter a sentence:&quot;</span>&lt;&lt;endl;</span><br><span class="line"><span class="keyword">while</span>(cin.<span class="built_in">get</span>(c))<span class="comment">//读取字符，如果读取成功则为true</span></span><br><span class="line">    cout.<span class="built_in">put</span>(c);</span><br><span class="line">cout&lt;&lt;<span class="string">&quot;The end.&quot;</span>&lt;&lt;endl;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -209,7 +210,6 @@
 
 <p>与三参get（）相似点：从输入流实体中读取n-1个字符，可以接受空格和制表符，默认终止符未回传换行符。</p>
 <p>与三参get（）区别：get（）会将回车换行符或终止字符留在缓冲区，而getline（）会将换行符或终止符抛弃。</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523175914519.png" alt="image-20220523175914519"></p>
 <h2 id="输入流类成员函数cin-getline"><a href="#输入流类成员函数cin-getline" class="headerlink" title="输入流类成员函数cin.getline()"></a>输入流类成员函数cin.getline()</h2><p>cin.getline()是istream类的成员函数，起作用是从输入流中读取“一行”字符。他有两个重载版本：</p>
 <p>（1）istream&amp; getline(char* buf,int bufSize);</p>
 <p>（2）istream&amp; getline(char* buf, int bufSize, char delim);</p>
@@ -221,13 +221,6 @@
 <p>1.cin.getline(数组名，N)表明该getline（）函数为istream流类的成员函数，用于处理数组字符串；</p>
 <p>2.getline（cin，string串）为一个全局函数，用与处理string字符串；</p>
 <p>3.两个函数都会自动在其所读入的数据结尾添加’’\0’.</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523183409971.png" alt="image-20220523183409971"></p>
-<p> <img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523184945349.png" alt="image-20220523184945349"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523190208604.png" alt="image-20220523190208604"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523190356218.png" alt="image-20220523190356218"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523191346584.png" alt="image-20220523191346584"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523191354121.png" alt="image-20220523191354121"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523192800898.png" alt="image-20220523192800898"></p>
 <h2 id="输入流成员函数ignore"><a href="#输入流成员函数ignore" class="headerlink" title="输入流成员函数ignore()"></a>输入流成员函数ignore()</h2><p>ignore()是istream类的成员函数，函数原型为：istream&amp; ignore（int n&#x3D;1,int delim&#x3D;EOF);</p>
 <p>函数的作用：跳过输入流中的n个字符，或者遇到指定的终止字符是提前结束（此时跳过包括delim在内的若干字符）。那个条件先满足就按那个执行</p>
 <p>两个参数都有默认值，因此cin.ignore()等效于cin.ignore(1,EOF),即：跳过输入队列中的一个字符。等效于cin.get().</p>
@@ -241,39 +234,22 @@
 <p>注意read和get（）&#x2F;getline（）的区别：读取n个（不是n-1个）输入流中的字符，没有额外补的’\0’.’\n’、空格、’\t’都会被当做有效字符读入。不许读进n个字符，如果输入的字符不够，会一直等待输入。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> SIZE=<span class="number">10</span>;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="type">char</span> name[SIZE];</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;inout:\n&quot;</span>;</span><br><span class="line">	cin.<span class="built_in">read</span>(name,SIZE);/必须吃满<span class="number">10</span>个字符，不给系统留空放<span class="string">&#x27;\0&#x27;</span></span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;cout’output:\n&quot;</span>&lt;&lt;name&lt;&lt;endl;</span><br><span class="line">	cout&lt;&lt;‘write<span class="number">&#x27;</span>output:\n;</span><br><span class="line">	cout.<span class="built_in">write</span>(name,SIZE);<span class="comment">//最好write与read配套使用</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//输出以下内容：</span></span><br><span class="line"><span class="number">123</span>“回车”</span><br><span class="line"><span class="number">4</span>“回车”</span><br><span class="line"><span class="number">567</span>“回车”</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523195907129.png" alt="image-20220523195907129"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523195932234.png" alt="image-20220523195932234"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523195943663.png" alt="image-20220523195943663"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523200040571.png" alt="image-20220523200040571"></p>
-<h2 id="一、C-的输入输出流"><a href="#一、C-的输入输出流" class="headerlink" title="一、C++的输入输出流"></a>一、C++的输入输出流</h2><h3 id="C-类库中的流类2-文件I-x2F-O流类"><a href="#C-类库中的流类2-文件I-x2F-O流类" class="headerlink" title="C++类库中的流类2_文件I&#x2F;O流类"></a>C++类库中的流类2_文件I&#x2F;O流类</h3><p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523210514058.png" alt="image-20220523210514058"></p>
-<p>c++标准类库中有三个类可以用于文件操作，统称为文件流类。这三个类是：</p>
+<h2 id="一、C-的输入输出流"><a href="#一、C-的输入输出流" class="headerlink" title="一、C++的输入输出流"></a>一、C++的输入输出流</h2><h3 id="C-类库中的流类2-文件I-x2F-O流类"><a href="#C-类库中的流类2-文件I-x2F-O流类" class="headerlink" title="C++类库中的流类2_文件I&#x2F;O流类"></a>C++类库中的流类2_文件I&#x2F;O流类</h3><p>c++标准类库中有三个类可以用于文件操作，统称为文件流类。这三个类是：</p>
 <p>（1）ifstream：用于从文件中读取数据。</p>
 <p>（2）ostream：用于向文件中写入数据。</p>
 <p>（3）fstream：既可以于从文件中读取数据，又可用于向文件中写入数据。</p>
 <p>使用这三个类时，程序中需要包含<fstream>头文件。</p>
 <p>ifstream类和fstream类从istream类派生而来的，因此ifstream类拥有istream类的全部成员函数。这三个类中有一些大家十分熟悉的成员函数可以使用，如operator&lt;&lt;、operator&gt;&gt;、peek（）、ignore（）、getline（）、get（）等。</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523211034679.png" alt="image-20220523211034679"></p>
 <h3 id="C-的输入输出流-1"><a href="#C-的输入输出流-1" class="headerlink" title="C++的输入输出流"></a>C++的输入输出流</h3><p>1.使用“格式控制符”控制格式iomanip</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iomanip&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="type">int</span> a;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;input a:&quot;</span>;</span><br><span class="line">	cin&gt;&gt;a;</span><br><span class="line">	</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;dex:&quot;</span>&lt;&lt;dex&lt;&lt;a&lt;&lt;endl;<span class="comment">//十进制形式输出</span></span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;hex:&quot;</span>&lt;&lt;hex&lt;&lt;a&lt;&lt;endl;<span class="comment">//十六进制形式输出</span></span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;oct:&quot;</span>&lt;&lt;oct&lt;&lt;a&lt;&lt;endl;<span class="comment">//八进制形式输出</span></span><br><span class="line">	</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;oct:&quot;</span>&lt;&lt;<span class="built_in">setbase</span>(<span class="number">8</span>)&lt;&lt;a&lt;&lt;endl;<span class="comment">///八进制形式输出</span></span><br><span class="line">	</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;oct:&quot;</span>&lt;&lt;showbase&lt;&lt;a&lt;&lt;endl;<span class="comment">//输出a的同时，显示a的基数符号（0x或0）</span></span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;oct:&quot;</span>&lt;&lt;<span class="built_in">setiosflags</span>(ios::showbase)&lt;&lt;a&lt;&lt;endl&lt;&lt;endl;<span class="comment">//同上句</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>输出结果：</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523211455829.png" alt="image-20220523211455829"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523212036680.png" alt="image-20220523212036680"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523212048400.png" alt="image-20220523212048400"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523212954731.png" alt="image-20220523212954731"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523230207157.png" alt="image-20220523230207157"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220523230738402.png" alt="image-20220523230738402"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220524000839802.png" alt="image-20220524000839802"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220524000929085.png" alt="image-20220524000929085"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220524001120992.png" alt="image-20220524001120992"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220524001200778.png" alt="image-20220524001200778"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220524001231361.png" alt="image-20220524001231361"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220524001323795.png" alt="image-20220524001323795"></p>
+
+
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/05/23/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%B5%81/" data-id="cl7opftuj00019ku6gea4be88" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/05/23/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%B5%81/" data-id="cl7opftuj00019ku6gea4be88" data-title="输入输出流" class="article-share-link">Share</a>
       
       
       
@@ -295,13 +271,21 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/04/29/%E5%A4%9A%E6%80%81%E4%B8%8E%E7%BB%A7%E6%89%BF/">继承与派生</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="Title：继承与派生"><a href="#Title：继承与派生" class="headerlink" title="Title：继承与派生"></a>Title：继承与派生</h1><h2 id="派生列对象的存储组织"><a href="#派生列对象的存储组织" class="headerlink" title="派生列对象的存储组织"></a>派生列对象的存储组织</h2><p>  1.每个对象实例都站一块存储空间，其中仅存放对象实例的非静态数据成员，静态数据成员和成员函数一个类就只存放一份.</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430094909951.png" alt="image-20220430094909951"></p>
+        <h2 id="派生列对象的存储组织"><a href="#派生列对象的存储组织" class="headerlink" title="派生列对象的存储组织"></a>派生列对象的存储组织</h2><p>  1.每个对象实例都站一块存储空间，其中仅存放对象实例的非静态数据成员，静态数据成员和成员函数一个类就只存放一份.</p>
 <h3 id="派生类的对象中存放以下内容："><a href="#派生类的对象中存放以下内容：" class="headerlink" title="派生类的对象中存放以下内容："></a>派生类的对象中存放以下内容：</h3><p> （1）自身定义的非静态数据成员；</p>
 <p> （2）从基类中继承的非静态数据成员；</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430095105852.png" alt="image-20220430095105852"></p>
 <p>注：在派生类对象中，包含着基类对象，并且基类对象的存储位置位于派生类对象新增的成员变量之前。</p>
 <h2 id="继承与构造、析构"><a href="#继承与构造、析构" class="headerlink" title="继承与构造、析构"></a>继承与构造、析构</h2><p>1.构造函数可缺省：用户在类中可以不定义构造函数，系统回自动设置一个default构造函数，但是default的构造函数是一个空函数，不进行任何操作（如果需要对类中的数据成员进行初始化，应自己定义构造函数。</p>
 <p>2.构造函数的作用：对数据成员进行初始化。但是派生类的构造函数需要考虑对派生类增加的数据成员和继承基类的数据成员初始化。</p>
@@ -314,23 +298,14 @@
 <p>​       先调用派生类的析构函数</p>
 <p>​       在调用基类的析构函数</p>
 <h3 id="不同复杂程度的派生类的构造函数"><a href="#不同复杂程度的派生类的构造函数" class="headerlink" title="不同复杂程度的派生类的构造函数"></a>不同复杂程度的派生类的构造函数</h3><p>1.简单派生类的构造函数（只有一个基类，且只有一级派生（只有直接派生类，没有间接欸派生类），在派生类的数据成员中不含其他类的对象（子对象）。任何派生类都包含基类的成员。</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430100453352.png" alt="image-20220430100453352"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430100528948.png" alt="image-20220430100528948"></p>
 <p>重要：在创建派生类对象时，需要调用基类的构造函数：初始化派生类对象中从基类继承的成员。在执行一个派生类的构造函数之前，总是先执行基类的构造函数。</p>
 <h3 id="调用基类构造函数的两种方式"><a href="#调用基类构造函数的两种方式" class="headerlink" title="调用基类构造函数的两种方式"></a>调用基类构造函数的两种方式</h3><p>1.显示调用:在派生类的构造函数中，为基类的构造函数提供参数。</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430100952034.png" alt="image-20220430100952034"></p>
 <p>即：在创建一个派生类对象时，就是调用基类的构造函数去初始化。</p>
 <p>2.隐式调用：在派生类的构造函数中，省略基类的构造函数。（需要基类中有默认的default构造函数或无参构造函数或带默认值的构造函数）</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430101400549.png" alt="image-20220430101400549"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430101414686.png" alt="image-20220430101414686">注：这个3赋值给m，而函数会调用基类的有默认值的构造函数给n赋值；</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430101714903.png" alt="image-20220430101714903"></p>
+<p>注：这个3赋值给m，而函数会调用基类的有默认值的构造函数给n赋值；</p>
 <p>注：实参3不能成功赋值给基类成员n，因为隐式调用只能调用default的构造函数、无参构造函数、有默认值的构造含数（就是直接把默认值赋值给数据成员），所以想要完成对n的赋值需要进行显示调用。</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430104955273.png" alt="image-20220430104955273"></p>
 <p>注：同理。</p>
-<h3 id="有子对象的派生类的构造函数"><a href="#有子对象的派生类的构造函数" class="headerlink" title="有子对象的派生类的构造函数"></a>有子对象的派生类的构造函数</h3><p>子对象：一个剋的成员函数是某一个类的对象成员，该对象就成为子对象。子对象实际上就是对象成员。</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430110612210.png" alt="image-20220430110612210"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430110623629.png" alt="image-20220430110623629"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430110633506.png" alt="image-20220430110633506"></p>
+<h3 id="有子对象的派生类的构造函数"><a href="#有子对象的派生类的构造函数" class="headerlink" title="有子对象的派生类的构造函数"></a>有子对象的派生类的构造函数</h3><p>子对象：一个的成员函数是某一个类的对象成员，该对象就成为子对象。子对象实际上就是对象成员。</p>
 <p>派生类构造函数名（总参数列表）：基类构造函数名（参数列表），子对象名（参数列表）{</p>
 <p>  派生类中新增数据成员初始化语句</p>
 <p>}</p>
@@ -351,11 +326,6 @@
 <li>最后执行基类的析构函数</li>
 </ol>
 <h3 id="多层派生时的构造函数"><a href="#多层派生时的构造函数" class="headerlink" title="多层派生时的构造函数"></a>多层派生时的构造函数</h3><p>多层派生：一个类不仅可以派生出一个派生类，派生类还可以继续派生，姓成派生的层次结构。</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430111809414.png" alt="image-20220430111809414"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430111819605.png" alt="image-20220430111819605"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430111832276.png" alt="image-20220430111832276"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430111912955.png" alt="	"></p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430111925059.png" alt="image-20220430111925059"></p>
 <h3 id="多层派生时的构造函数-1"><a href="#多层派生时的构造函数-1" class="headerlink" title="多层派生时的构造函数"></a>多层派生时的构造函数</h3><p>基类的构造函数：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Student</span>(<span class="type">int</span> n,string nam)</span><br></pre></td></tr></table></figure>
 
@@ -372,7 +342,7 @@
 <p>在执行Student1构造函数时，先调用基类Student构造函数。</p>
 <p>初始化的顺序是：</p>
 <ol>
-<li>先初始化基类的数据成员num和name</li>
+<li>先初始化基类的数据成员 num 和name</li>
 <li>在初始化Student的数据成员age</li>
 <li>最后在初始化Student2的数据成员score</li>
 </ol>
@@ -394,12 +364,11 @@
 <p>（4）基类或子对象类型中定义了带参数的构造函数：必须显示定义派生类构造函数，并在派生类构造函数中显示给出基类或子对象类型的构造函数及其参数列表。</p>
 <p>（5）基类中既定义午无参的构造函数，又定义了有参的构造函数：定义派生类构造函数时，既可以包含基类构造函数及参数，也可以不包含基类构造函数。</p>
 <p>​    调用派生类构造函数时，根据构造函数的内容决定调用基类的有参构造函数还是无参构造函数，编程可以根据派生类的需要决定采用哪一种方式。</p>
-<p><img src="C:\Users\缪承杭\AppData\Roaming\Typora\typora-user-images\image-20220430145632556.png" alt="image-20220430145632556"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/29/%E5%A4%9A%E6%80%81%E4%B8%8E%E7%BB%A7%E6%89%BF/" data-id="cl7opftue00009ku62indbtie" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/04/29/%E5%A4%9A%E6%80%81%E4%B8%8E%E7%BB%A7%E6%89%BF/" data-id="cl7opftue00009ku62indbtie" data-title="继承与派生" class="article-share-link">Share</a>
       
       
       
@@ -446,11 +415,11 @@
           </li>
         
           <li>
-            <a href="/2022/05/23/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%B5%81/">(no title)</a>
+            <a href="/2022/05/23/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%B5%81/">输入输出流</a>
           </li>
         
           <li>
-            <a href="/2022/04/29/%E5%A4%9A%E6%80%81%E4%B8%8E%E7%BB%A7%E6%89%BF/">(no title)</a>
+            <a href="/2022/04/29/%E5%A4%9A%E6%80%81%E4%B8%8E%E7%BB%A7%E6%89%BF/">继承与派生</a>
           </li>
         
       </ul>
